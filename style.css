@@ -1,0 +1,114 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
+body{
+    font-family: 'Playfair Display', serif;
+}
+nav h1{
+    margin-left: 20px;
+    
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+
+
+}
+.influencer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+.part-one{
+    margin-bottom: 130px;
+}
+.heading{
+    font-size: 35px;
+}
+section p{
+    font-size: medium;
+}
+button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+}
+.prebook-button{
+    background-color:rgba(190, 14, 73, 0.863);
+    border: none;
+    padding:5px 20px;
+    border-radius: 10px;
+    
+}
+.influencer-right img{
+    width: 400px;
+    
+}
+/* collection style */
+.collection-title{
+    text-align: center;
+    font-size: 25px;
+}
+.collections .collection-image img{
+    width: 230px ;
+    height: 130px;
+}
+.fa-star.filled{
+    color: orange;
+}
+.fa-star.empty{
+    color: wheat;
+}
+.stars{
+    display: flex;
+    align-items: center;
+    
+}
+.collection-item{
+    width: 230px;
+    height: 376px;
+   border-radius: 5px;
+   background-color: lightyellow;
+   
+  
+}
+.collection-info{
+    padding-left: 6px;
+}
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    
+    
+}
+.see-button{
+    color: rgba(190, 14, 73, 0.863);
+    border: none;
+    float: right;
+    margin-right: 100px;
+    font-weight: 600;
+    
+}
+.see-button> i{
+    padding-left: 4px;
+}
+
+.bonus-contant{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}   
+.bonus-contant .bonus-image img{
+    width: 350px;
+}
+footer{
+    background-color: rgb(7, 7, 17);
+    color: white;
+    text-align: center;
+}
+    
+
