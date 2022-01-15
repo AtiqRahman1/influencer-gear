@@ -3,30 +3,31 @@
 
 body{
     font-family: 'Playfair Display', serif;
+    
 }
 nav h1{
-    margin-left: 20px;
+    margin-left: 60px;
     
 }
 
 .container{
     max-width: 1000px;
     margin: 0 auto;
-
-
 }
+
+/*  influencer style */
+
 .influencer{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
     align-items: center;
+    margin-bottom: 100px;
 }
-.part-one{
-    margin-bottom: 130px;
-}
+
 .heading{
     font-size: 35px;
 }
+
 section p{
     font-size: medium;
 }
@@ -35,21 +36,30 @@ button a{
     color: white;
     font-weight: 200;
 }
-.prebook-button{
+.link-button{
     background-color:rgba(190, 14, 73, 0.863);
     border: none;
     padding:5px 20px;
     border-radius: 10px;
     
 }
+
 .influencer-right img{
-    width: 400px;
+    width: 400px; 
+    transition: width 2s, height 2s, transform 2s;
+}
+.influencer-right:hover{
+    background-color: lightgray;
     
 }
+
+
+
 /* collection style */
+
 .collection-title{
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
 }
 .collections .collection-image img{
     width: 230px ;
@@ -96,6 +106,8 @@ button a{
     padding-left: 4px;
 }
 
+ /* Bonus content  */
+
 .bonus-contant{
     margin-top: 60px;
     display: grid;
@@ -105,10 +117,30 @@ button a{
 .bonus-contant .bonus-image img{
     width: 350px;
 }
+/* footer style  */
+
 footer{
     background-color: rgb(7, 7, 17);
     color: white;
     text-align: center;
+}
+
+/* Media queries */
+ /* Mobile devices */
+@media only screen and (max-width:688px) {
+    .influencer, .collections, .bonus-contant{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+}
+/* Tablet devices */
+
+@media (min-width:688px) (max-width:992px){
+    .influencer, .collections, .bonus-contant{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    
 }
     
 
